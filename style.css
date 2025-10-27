@@ -33,6 +33,7 @@ body {
   */
   /* background: color image repeat position/size  ATALHO!!!*/
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -161,4 +162,14 @@ footer {
 footer a {
   text-decoration: underline;
   font-weight: 300;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
